@@ -5,33 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient's Projects</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="container">
-        <header>
-            <h1>My Projects</h1>
-            <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="resume.html">Resume</a>
+        <header class="projects-header">
+            <h1 class="page-title">Development Projects</h1>
+            <nav class="project-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="resume.html" class="nav-link">Resume</a>
             </nav>
         </header>
-        <section class="section">
-            <div class="project-item" id="pricing-table">
-                <h3><a href="https://github.com/Code-You-Projects/Pricing_table-" target="_blank">Pricing Table</a></h3>
-                <p>A responsive pricing table showcasing different service plans with a clean design. Built using HTML, CSS, and JavaScript for interactive elements.</p>
-            </div>
-            <div class="project-item" id="pomodoro">
-                <h3><a href="https://github.com/patient031/Pomodoro-Timer" target="_blank">Pomodoro Timer</a></h3>
-                <p>A productivity timer implementing the Pomodoro technique. Features customizable work and break intervals using JavaScript for dynamic updates.</p>
-            </div>
-            <div class="project-item">
-                <h3><a href="https://github.com/patient031/Rock_Paper_Scissor_Game" target="_blank">Rock Paper Scissors Game</a></h3>
-                <p>A simple Rock Paper Scissors game that can be played in the browser console. Built using JavaScript for game logic.</p>
-            </div>
+
+        <section class="project-list">
+            <article class="project-item" id="pricing-table">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <a href="https://github.com/Code-You-Projects/Pricing_table-" target="_blank" class="project-link">
+                                Pricing Table Component
+                                <span class="external-icon">↗</span>
+                            </a>
+                        </h3>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <p class="project-description">A responsive pricing table with tier comparison functionality and animated toggle between monthly/annual plans. Features include:</p>
+                    <ul class="feature-list">
+                        <li>Flexbox-based responsive layout</li>
+                        <li>Interactive hover states and transitions</li>
+                        <li>CSS custom properties for themeing</li>
+                        <li>Mobile-first approach</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="project-item" id="pomodoro">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <a href="https://github.com/patient031/Pomodoro-Timer" target="_blank" class="project-link">
+                                Pomodoro Productivity Timer
+                                <span class="external-icon">↗</span>
+                            </a>
+                        </h3>
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS Animations</span>
+                            <span class="tech-tag">Local Storage</span>
+                        </div>
+                    </div>
+                    <p class="project-description">A customizable productivity timer implementing the Pomodoro Technique with:</p>
+                    <ul class="feature-list">
+                        <li>Adjustable work/break intervals</li>
+                        <li>Circular progress indicator</li>
+                        <li>Sound notifications</li>
+                        <li>Session history tracking</li>
+                    </ul>
+                </div>
+            </article>
+            
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Patient Tuyishime. All rights reserved.</p>
+    <footer class="footer">
+        <p class="footer-text">© 2024 Patient Tuyishime. All rights reserved.</p>
     </footer>
 </body>
 </html>
